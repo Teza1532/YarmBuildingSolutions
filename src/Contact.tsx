@@ -1,17 +1,16 @@
 function Contact() {
   return (
-    <section id="contact" className="py-20">
-      <div className="mx-auto max-w-6xl px-4">
-        <h2 className="text-3xl font-bold underline-gold">Get a quote</h2>
-        <p className="mt-4 text-slate-300 max-w-2xl">
+    <section className="mt-20 py-20 bg-slate-950/40 min-h-[60vh]">
+      <div className="mx-auto max-w-3xl px-4">
+        <h2 className="text-3xl font-bold underline-gold mb-6">Get a quote</h2>
+        <p className="text-slate-300 mb-6">
           Tell us a little about your project and we’ll get back to you.
         </p>
         <form
-          className="mt-8 grid gap-4 max-w-2xl"
+          className="grid gap-4"
           action="https://formspree.io/f/mwpqyrnd"
           method="POST"
         >
-          {/* Redirect to your homepage after submit */}
           <input type="hidden" name="_redirect" value="https://yoursite.com/" />
           <div className="grid sm:grid-cols-2 gap-4">
             <input

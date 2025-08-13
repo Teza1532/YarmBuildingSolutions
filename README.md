@@ -2,34 +2,5 @@
 
 A Vite + React + TypeScript + Tailwind project with the company's black & gold branding.
 
-## Quick start
-
-```bash
-npm install
-npm run dev
-```
-
-Open the URL shown in the terminal.
-
-## Customising
-
-- Replace images in `public/images/`. Two placeholders have been added:
-  - `ybs-logo-1.png` (gold on dark)
-  - `ybs-sketch.png` (logo sketch)
-- Edit text in `src/App.tsx` (sections: Hero, Services, Areas, Gallery, Contact).
-- Colors are defined in `tailwind.config.js` under `theme.extend.colors.brand`.
-
-## Instagram gallery
-
-For a live embedded feed you have options:
-
-1. **Simple link (already set):** Buttons link to your profile.
-2. **Embed a post:** Paste the embed HTML from Instagram into a new component.
-3. **Use a feed service** (eg. SnapWidget, LightWidget) and drop their `<script>` snippet into `index.html`.
-
-## Deployment
-
-- Build locally with `npm run build`, then upload the `dist/` folder to your host.
-- For Netlify/Vercel:
-  - Build command: `npm run build`
-  - Publish directory: `dist`
+This site was completely vibecoded using visual studio. 
+Orginally requested by Richard Oakley for Yarm Building solutions design and logo designed as requested.

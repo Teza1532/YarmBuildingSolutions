@@ -16,7 +16,7 @@ function Gallery() {
   }, [])
 
   return (
-    <section id="gallery" className="py-20 bg-slate-950/40">
+    <section id="gallery" className="mt-10 py-20 bg-slate-950/40">
       <div className="mx-auto max-w-3xl px-4">
         <h2 className="text-3xl font-bold underline-gold">Recent work</h2>
         <p className="mt-4 text-slate-300">

@@ -6,6 +6,9 @@ import Services from './Services'
 import Areas from './Areas'
 import Gallery from './Gallery'
 import Contact from './Contact'
+import LocalBuilders from './LocalBuilders'
+import ExtensionBuilders from './ExtensionBuilders'
+import ArchitectsTeesside from './ArchitectsTeesside'
 import Footer from './Footer'
 
 export default function App() {
@@ -24,6 +27,9 @@ export default function App() {
               </>
             }
           />
+          <Route path="/local-builders" element={<LocalBuilders />} />
+          <Route path="/extension-builders" element={<ExtensionBuilders />} />
+          <Route path="/architects-teesside" element={<ArchitectsTeesside />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
