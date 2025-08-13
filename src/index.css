@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html { scroll-behavior: smooth; }
+.underline-gold { position: relative; }
+.underline-gold::after {
+  content: ""; position: absolute; left: 0; bottom: -4px; width: 64px; height: 3px;
+  background: theme('colors.brand.gold'); border-radius: 9999px;
+}
