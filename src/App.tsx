@@ -18,7 +18,7 @@ export default function App() {
         <Nav />
         <Routes>
           <Route
-            path="/YarmBuildingSolutions/"
+            path="/"
             element={
               <>
                 <Hero />
