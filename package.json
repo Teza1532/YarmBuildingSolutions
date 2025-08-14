@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "homepage": "https://teza1532.github.io/YarmBuildingSolutions/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
