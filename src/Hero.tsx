@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 function Hero() {
   return (
     <section
-      className="relative"
+      className="relative pt-20" // Add top padding to push content below the fixed nav
       style={{
-        backgroundImage: "url('./images/hero-kitchen.jpg')",
+        backgroundImage: "url('/images/hero-kitchen.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

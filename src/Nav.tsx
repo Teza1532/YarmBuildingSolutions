@@ -5,7 +5,7 @@ function Nav() {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className="w-full py-6 px-4 bg-slate-950/80 justify-center fixed top-0 left-0 z-50 shadow flex items-center">
+    <nav className="w-full py-2 px-4 bg-slate-950/80 justify-center fixed top-0 left-0 z-50 shadow flex items-center">
       <Link to="/" className="text-2xl mr-32 font-bold text-brand-gold">Yarm Building Solutions</Link>
       <button
         className="md:hidden text-brand-gold text-3xl focus:outline-none"
