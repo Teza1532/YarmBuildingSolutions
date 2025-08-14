@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async'
 
 function LocalBuilders() {
   return (
-    <section className="mt-10 py-20 bg-slate-950/40 min-h-[60vh]">
+    <section className="mt-10 py-20 min-h-[60vh]">
       <Helmet>
         <title>Local Builders | Yarm Building Solutions</title>
         <meta name="description" content="Highly qualified local builders with 20+ years experience. New builds, commercial, industrial, domestic projects and more." />

@@ -6,7 +6,7 @@ function Hero() {
     <section
       className="relative pt-20" // Add top padding to push content below the fixed nav
       style={{
-        backgroundImage: "url('/images/hero-kitchen.jpg')",
+        backgroundImage: "url('/images/Extension.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

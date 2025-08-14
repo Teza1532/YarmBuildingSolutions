@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async'
 
 function ExtensionBuilders() {
   return (
-    <section className="mt-10 py-20 bg-slate-950/40 min-h-[60vh]">
+    <section className="mt-10 py-20 min-h-[60vh]">
       <Helmet>
         <title>Extension Builders | Yarm Building Solutions</title>
         <meta name="description" content="Extension builders in Teesside for major builds, minor extensions, refurbishments, maintenance and more." />

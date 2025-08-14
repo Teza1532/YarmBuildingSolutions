@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async'
 
 function ArchitectsTeesside() {
   return (
-    <section className="mt-10 py-20 bg-slate-950/40 min-h-[60vh]">
+    <section className="mt-10 py-20 min-h-[60vh]">
       <Helmet>
         <title>Architects Teesside | Yarm Building Solutions</title>
         <meta name="description" content="We work closely with local architects in Teesside to plan, design, and deliver your building project with attention to detail and practical solutions." />
