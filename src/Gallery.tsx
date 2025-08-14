@@ -12,6 +12,12 @@ function Gallery() {
     for (let i = 1; i <= imageCount; i++) {
       imageList.push(`/images/Carousel/${i}.jpg`)
     }
+    imageList.push(`/images/Bathroom/bathroom-sink-before.png`)
+    imageList.push(`/images/Bathroom/bathroom-sink-after.png`)
+    imageList.push(`/images/Bathroom/Bathroom-Bath-before.png`)
+    imageList.push(`/images/Bathroom/bathroom-bath-after.png`)
+
+
     setImages(imageList)
   }, [])
 
