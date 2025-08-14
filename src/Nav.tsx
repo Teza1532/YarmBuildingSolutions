@@ -6,7 +6,7 @@ function Nav() {
 
   return (
     <nav className="w-full py-6 px-4 bg-slate-950/80 fixed top-0 left-0 z-50 shadow flex items-center justify-between">
-      <Link to="/" className="text-2xl font-bold text-brand-gold">Yarm Building Solutions</Link>
+      <Link to="/YarmBuildingSolutions" className="text-2xl font-bold text-brand-gold">Yarm Building Solutions</Link>
       <button
         className="md:hidden text-brand-gold text-3xl focus:outline-none"
         onClick={() => setOpen(!open)}

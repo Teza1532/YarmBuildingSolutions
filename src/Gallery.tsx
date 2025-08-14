@@ -7,10 +7,10 @@ function Gallery() {
 
   useEffect(() => {
     // List of image filenames in /images/Carousel (add or remove as needed)
-    const imageCount = 3 // Change this to the number of images you have
+    const imageCount = 2 // Change this to the number of images you have
     const imageList = []
     for (let i = 1; i <= imageCount; i++) {
-      imageList.push(`/images/Carousel/${i}.jpg`)
+      imageList.push(`./images/Carousel/${i}.jpg`)
     }
     setImages(imageList)
   }, [])
