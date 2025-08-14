@@ -10,7 +10,7 @@ function Gallery() {
     const imageCount = 2 // Change this to the number of images you have
     const imageList = []
     for (let i = 1; i <= imageCount; i++) {
-      imageList.push(`./images/Carousel/${i}.jpg`)
+      imageList.push(`YarmBuildingSolutions/images/Carousel/${i}.jpg`)
     }
     setImages(imageList)
   }, [])
