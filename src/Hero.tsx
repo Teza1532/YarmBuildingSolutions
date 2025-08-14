@@ -6,7 +6,7 @@ function Hero() {
     <section
       className="relative"
       style={{
-        backgroundImage: "url('/images/hero-kitchen.jpg')",
+        backgroundImage: "url('./images/hero-kitchen.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
