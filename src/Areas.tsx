@@ -1,7 +1,7 @@
 function Areas() {
   const areas = ["Yarm","Coulby Newham","Wynyard Village","Normanby","Redcar","Eston","Ingleby Barwick","Stockton-on-Tees"]
   return (
-    <section id="areas" className="py-20">
+    <section id="areas" className="py-10">
       <div className="mx-auto max-w-6xl px-4">
         <h2 className="text-3xl font-bold underline-gold">Areas we cover</h2>
         <p className="mt-4 text-slate-300 max-w-3xl">
