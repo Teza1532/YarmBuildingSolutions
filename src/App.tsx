@@ -15,25 +15,29 @@ export default function App() {
   return (
     <HelmetProvider>
       <Router>
-        <Nav />
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Hero />
-                <Services />
-                <Areas />
-              </>
-            }
-          />
-          <Route path="/local-builders" element={<LocalBuilders />} />
-          <Route path="/extension-builders" element={<ExtensionBuilders />} />
-          <Route path="/architects-teesside" element={<ArchitectsTeesside />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-        <Footer />
+        <div className="flex flex-col min-h-screen">
+          <Nav />
+          <div className="flex-1">
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <>
+                    <Hero />
+                    <Areas />
+                    <Services />
+                  </>
+                }
+              />
+              <Route path="/local-builders" element={<LocalBuilders />} />
+              <Route path="/extension-builders" element={<ExtensionBuilders />} />
+              <Route path="/architects-teesside" element={<ArchitectsTeesside />} />
+              <Route path="/gallery" element={<Gallery />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </div>
+          <Footer />
+        </div>
       </Router>
     </HelmetProvider>
   )
