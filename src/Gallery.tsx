@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"
 
 function Gallery() {
   const [images, setImages] = useState<string[]>([])
+  const [loadedImages, setLoadedImages] = useState<Set<number>>(new Set())
 
   useEffect(() => {
     // List of image filenames in /images/Carousel (add or remove as needed)
@@ -21,6 +22,10 @@ function Gallery() {
     setImages(imageList)
   }, [])
 
+  const handleImageLoad = (idx: number) => {
+    setLoadedImages(prev => new Set(prev).add(idx))
+  }
+
   return (
     <section id="gallery" className="mt-10 py-20">
       <div className="mx-auto max-w-3xl px-4">
@@ -28,11 +33,30 @@ function Gallery() {
         <p className="mt-4 text-slate-300">
           Swipe to see more of our projects!
         </p>
-        <div className="mt-8">
-          <Carousel showThumbs={false} infiniteLoop autoPlay>
+        <div className="mt-8 carousel-container">
+          <Carousel 
+            showThumbs={false} 
+            infiniteLoop 
+            autoPlay
+            transitionTime={500}
+            interval={5000}
+            swipeable={true}
+            emulateTouch={true}
+            stopOnHover={true}
+          >
             {images.map((src, idx) => (
-              <div key={idx}>
-                <img src={src} alt={`Gallery ${idx + 1}`} className="rounded-2xl" />
+              <div key={idx} className="carousel-slide-wrapper">
+                {!loadedImages.has(idx) && (
+                  <div className="carousel-loading">
+                    <div className="loading-spinner"></div>
+                  </div>
+                )}
+                <img 
+                  src={src} 
+                  alt={`Gallery ${idx + 1}`} 
+                  className="carousel-image"
+                  onLoad={() => handleImageLoad(idx)}
+                />
               </div>
             ))}
           </Carousel>
