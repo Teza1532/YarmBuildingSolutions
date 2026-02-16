@@ -56,7 +56,6 @@ function Gallery() {
                   alt={`Gallery ${idx + 1}`} 
                   className="carousel-image"
                   onLoad={() => handleImageLoad(idx)}
-                  loading="lazy"
                 />
               </div>
             ))}
